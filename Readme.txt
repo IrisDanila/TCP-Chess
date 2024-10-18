@@ -21,7 +21,7 @@ Compile and test a program:
 
 P.S. you can delete the big file from raylib/.git/objects/pack/ to save space, it's almost 400mb for some reason
 
-All the necessary packages:
+All the necessary packages: (you need to install them in order to build raylib)
 sudo apt-get update
 sudo apt-get install -y \
     build-essential \
