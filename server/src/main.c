@@ -69,10 +69,12 @@ void* handle_game(void* arg) {
 }
 
 void start_new_game(Player* player1, Player* player2) {
-    for (int i = 0; i < MAX_GAMES; i++) {
+    for (int i = 0; i < MAX_GAMES; i++) { 
         if (games[i].white.socket == 0) {
             games[i].white = *player1;
             games[i].black = *player2;
+            printf("Player 1 socket: %d\n", games[i].white.socket);
+            printf("Player 2 socket: %d\n", games[i].black.socket);
             pthread_create(&games[i].thread, NULL, handle_game, &games[i]);
             printf("Starting new game between %s and %s\n", player1->name, player2->name);
             return;

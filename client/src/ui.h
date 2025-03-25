@@ -10,5 +10,6 @@ typedef struct PossibleMoves PossibleMoves;
 
 void run_ui(int socket);
 void deserialize_board(char* game_state);
+void run_uii(int socket);
 
 #endif // __UI_H__

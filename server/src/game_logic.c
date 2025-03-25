@@ -33,7 +33,8 @@ void initialize_game_state(char* game_state) {
     game_state[pos] = '\0';
 }
 
-void update_game_state(char* game_state, const char* move) {
+void update_game_state(char* game_state, const char* move) 
+{
     // Parse move string
     int from_x, from_y, to_x, to_y;
     sscanf(move, "%d,%d,%d,%d", &from_x, &from_y, &to_x, &to_y);

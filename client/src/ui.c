@@ -44,7 +44,6 @@ typedef struct {
 
 Color highlightColor = (Color){76, 175, 80, 100};  // Light green with alpha
 
-
 PossibleMoves get_possible_moves(int x, int y) {
     PossibleMoves moves = {0};
     if (x < 0 || x >= 8 || y < 0 || y >= 8 || board[y][x].type == 0) {
